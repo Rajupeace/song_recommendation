@@ -1,0 +1,14 @@
+services:
+  song-recommendation-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: song-recommendation-api
+    ports:
+      - "8000:8000"
+    environment:
+      MLFLOW_TRACKING_URI: "http://host.docker.internal:5000"
+      MLFLOW_MODEL_URI: "models:/Song_Recommendation_ALS@candidate"
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    restart: unless-stopped

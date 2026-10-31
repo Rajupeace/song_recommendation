@@ -1,0 +1,51 @@
+
+# Python environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dataset files
+data/raw/
+data/processed/
+*.zip
+*.db
+
+# MLflow local tracking data and artifacts
+mlruns/
+mlartifacts/
+mlflow.db
+
+# Model binaries
+models/*.npz
+models/*.joblib
+models/*.pkl
+
+# Generated outputs
+outputs/*.csv
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Operating system
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Temporary folders
+tmp/
+temp/

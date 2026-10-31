@@ -1,0 +1,4 @@
+Metric,Score
+Precision@10,0.0418
+Recall@10,0.06330074560796076
+Hit Rate@10,0.295
